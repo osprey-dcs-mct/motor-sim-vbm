@@ -16,10 +16,17 @@ DBD += motor_vbm.dbd
 motor_vbm_DBD += base.dbd
 
 # Include dbd files from all support applications:
-#motor_vbm_DBD += xxx.dbd
+motor_vbm_DBD += asyn.dbd
+motor_vbm_DBD += motorSupport.dbd
+motor_vbm_DBD += devSoftMotor.dbd
+motor_vbm_DBD += motorSimSupport.dbd
+
 
 # Add all the support libraries needed by this IOC
-#motor_vbm_LIBS += xxx
+motor_vbm_LIBS += motor
+motor_vbm_LIBS += motorSimSupport
+motor_vbm_LIBS += softMotor
+motor_vbm_LIBS += asyn
 
 # motor_vbm_registerRecordDeviceDriver.cpp derives from motor_vbm.dbd
 motor_vbm_SRCS += motor_vbm_registerRecordDeviceDriver.cpp

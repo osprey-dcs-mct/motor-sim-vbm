@@ -22,8 +22,9 @@
 # the CONFIG_SITE file.
 
 # Variables and paths to dependent modules:
-#MODULES = /path/to/modules
-#MYMODULE = $(MODULES)/my-module
+MODULES = /Users/waynelewis/epics/7.0.6.1/modules
+MOTOR = $(MODULES)/motor-7-2-2-cc6c6a9b
+ASYN = $(MODULES)/asyn-4-42
 
 # If using the sequencer, point SNCSEQ at its top directory:
 #SNCSEQ = $(MODULES)/seq-ver
