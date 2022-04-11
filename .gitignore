@@ -1,0 +1,6 @@
+bin/
+configure/O.darwin-x86/
+dbd/
+motor_vbmApp/Db/O.darwin-x86/
+motor_vbmApp/src/O.Common/
+motor_vbmApp/src/O.darwin-x86/
