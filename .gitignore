@@ -1,5 +1,5 @@
 bin/
-db/
+/db/
 O.darwin-x86/
 dbd/
 O.Common/
