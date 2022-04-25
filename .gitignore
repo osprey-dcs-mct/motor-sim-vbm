@@ -3,6 +3,8 @@ bin/
 O.darwin-x86/
 dbd/
 O.Common/
+O.*
 envPaths
 *.swp
+*.local
 
