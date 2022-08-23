@@ -1,0 +1,6 @@
+record(calc, "MCTTBL01DAQ01:SumAll:MeanValue_RBV")
+{
+  field(SCAN, ".1 second")
+  field(CALC, "RNDM*100")
+}
+

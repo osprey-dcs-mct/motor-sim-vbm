@@ -1,4 +1,4 @@
-#!../../bin/darwin-x86/motor_vbm
+#!../../bin/linux-x86_64/motor_vbm
 
 #- You may have to change motor_vbm to something else
 #- everywhere it appears in this file
@@ -27,8 +27,11 @@ motorSimConfigAxis("motorSim2", 7, 20000, -20000, 0, 0)
 
 ## Load record instances
 dbLoadTemplate("db/motor.substitutions")
+dbLoadRecords("db/calc.db")
 
 cd "${TOP}/iocBoot/${IOC}"
+dbLoadRecords("stripe.db")
+
 iocInit
 
 ## Start any sequence programs
