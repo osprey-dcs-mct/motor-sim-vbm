@@ -1,6 +1,8 @@
-record(calc, "MCTTBL01DAQ01:SumAll:MeanValue_RBV")
-{
-  field(SCAN, ".1 second")
-  field(CALC, "RNDM*100")
+
+record(calc,"MCTTBL01DAQ01:SumAll:MeanValue_SIM"){
+  field(INPA, "$(P)MONO01_OPT_SCAN.BUSY CP")
+  field(INPB, "$(P)MONO01_OPT_SCAN.CPT CP")
+  field(INPC, "MCTTBL01DAQ01:SumAll:MeanValue_SIM NPP")
+  field(CALC, "A?B<21?C+3+3*RNDM:C-(3+3*RNDM):0")
 }
 
