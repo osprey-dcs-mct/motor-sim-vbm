@@ -8,6 +8,7 @@ include $(TOP)/configure/CONFIG
 # databases, templates, substitutions like this
 DB_INSTALLS += $(MOTOR)/db/motorSimTest.db
 DB += motor.substitutions
+DB += calc.db
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
