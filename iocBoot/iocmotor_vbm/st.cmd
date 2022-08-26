@@ -30,7 +30,7 @@ dbLoadTemplate("db/motor.substitutions")
 dbLoadRecords("db/calc.db")
 
 cd "${TOP}/iocBoot/${IOC}"
-dbLoadRecords("stripe.db")
+#dbLoadRecords("stripe.db")
 
 iocInit
 
